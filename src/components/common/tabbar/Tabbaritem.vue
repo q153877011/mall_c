@@ -36,6 +36,7 @@ export default {
   height: 49px;
   text-align: center;
   font-size: 14px;
+  width: 100%;
 }
 
 .tab-bar-item img {

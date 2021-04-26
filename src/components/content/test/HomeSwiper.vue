@@ -1,9 +1,9 @@
 <template>
   <div>
-    <el-carousel indicator-position="outside" height="150px">
-      <el-carousel-item v-for="item in this.imgs" :key="item">
+    <el-carousel height="150px" :interval="1000">
+      <el-carousel-item v-for="item in this.imgs" :key="item.link">
         <h3>
-          <img :src="item.image" height="150px" width="320px" />
+          <img :src="item.image" height="150px" width="100%"/>
         </h3>
       </el-carousel-item>
     </el-carousel>
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import { getHomeImage } from "@/network/request.js";
 export default {
   name: "test",
   props: {

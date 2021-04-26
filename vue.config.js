@@ -9,7 +9,9 @@ module.exports = {
         components: "@/components"
       }
     }
-  }
+  },
+
+  lintOnSave: false
 };
 
 module.exports = {
